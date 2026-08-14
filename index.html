@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WatsonPowers | Real Estate Coaching — Sales Funnel Mockup</title>
+<meta name="description" content="WatsonPowers real estate coaching sales funnel concept — proven strategies, systems, scripts and coaching.">
+<style>
+:root {
+  --navy:#061426; --navy2:#0b1f3a; --blue:#2f6fc4; --blue2:#5b94df;
+  --orange:#ff6b1a; --orange2:#ff8a3d; --white:#fff; --muted:#aebbd0;
+  --line:rgba(255,255,255,.11); --card:#0d213d; --light:#f4f7fb;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--navy);color:var(--white);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:#030b16;border-bottom:1px solid var(--line);font-size:12px;color:#b9c5d8}
+.topbar .container{display:flex;justify-content:space-between;padding:10px 0}
+nav{position:sticky;top:0;z-index:20;background:rgba(6,20,38,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;padding:15px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.04em}
+.logoMark{width:42px;height:42px;border-radius:9px;background:linear-gradient(145deg,#4d8fe5,#1c57a4);display:grid;place-items:center;font-size:18px}
+.logo small{display:block;color:#5c99e7;font-size:10px;letter-spacing:.08em}
+.navlinks{display:flex;gap:25px;font-size:14px;color:#cbd6e7}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:7px;background:linear-gradient(90deg,var(--orange),#ff7d20);font-weight:800;box-shadow:0 12px 30px rgba(255,107,26,.2);transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.secondary{background:transparent;border:1px solid #477fc8;box-shadow:none}
+.hero{position:relative;overflow:hidden;padding:82px 0 70px;background:
+radial-gradient(circle at 80% 20%,rgba(47,111,196,.35),transparent 34%),
+linear-gradient(115deg,#061426 0%,#07172c 56%,#0c274a 100%)}
+.hero:after{content:"";position:absolute;inset:auto -10% -120px 45%;height:360px;background:linear-gradient(90deg,transparent,rgba(47,111,196,.15));transform:skewX(-22deg)}
+.heroGrid{display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center;position:relative;z-index:2}
+.eyebrow{color:#68a1e8;text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:12px}
+h1{font-size:clamp(44px,6vw,76px);line-height:.98;margin:18px 0 22px;letter-spacing:-.045em}
+.orange{color:var(--orange)}
+.hero p{font-size:19px;color:#d1d9e6;max-width:650px}
+.heroActions{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0}
+.heroImg{width:100%;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.13)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.13);margin-top:35px;border-radius:12px;overflow:hidden}
+.stat{background:rgba(6,20,38,.88);padding:19px;text-align:center}
+.stat strong{display:block;font-size:28px} .stat span{font-size:11px;color:#6ea2e5;text-transform:uppercase;letter-spacing:.08em}
+.section{padding:88px 0}
+.section.light{background:var(--light);color:#0b1b31}
+.sectionHead{max-width:780px;margin-bottom:42px}
+.sectionHead h2{font-size:clamp(34px,5vw,55px);line-height:1.03;margin:10px 0 15px;letter-spacing:-.035em}
+.sectionHead p{color:#9aabc2;font-size:17px}
+.light .sectionHead p{color:#5d6b7e}
+.proofGrid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.proofCopy{background:linear-gradient(145deg,#0b1d36,#102b50);padding:38px;border-radius:18px;border:1px solid var(--line)}
+.checks{display:grid;gap:14px;margin:25px 0}
+.check{display:flex;gap:12px;align-items:flex-start}
+.check i{width:25px;height:25px;border-radius:50%;background:rgba(255,107,26,.16);color:var(--orange);display:grid;place-items:center;font-style:normal;font-weight:900}
+.creative{border-radius:16px;overflow:hidden;border:1px solid #d8e0eb;box-shadow:0 25px 60px rgba(2,14,28,.18);background:#fff}
+.creative img{display:block;width:100%;height:auto}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.kicker{color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.13em;font-size:12px}
+.featureGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.feature{background:#fff;border:1px solid #e0e6ef;border-radius:14px;padding:24px;box-shadow:0 8px 25px rgba(7,23,44,.05)}
+.feature b{display:block;color:#0b1b31;font-size:17px;margin:10px 0}
+.feature p{color:#627187;font-size:14px;margin:0}
+.icon{width:44px;height:44px;border-radius:11px;background:#e8f1fc;color:#1e5ca9;display:grid;place-items:center;font-weight:900}
+.phoneRow{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:center}
+.reviewGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.review{background:#fff;border:1px solid #e2e7ee;border-radius:15px;padding:22px;color:#18263a;box-shadow:0 8px 25px rgba(7,23,44,.06)}
+.review h3{margin:4px 0 10px;font-size:17px}
+.review p{font-size:14px;color:#526174;margin:0}
+.stars{color:var(--orange);letter-spacing:2px}
+.rating{display:flex;align-items:center;gap:18px;margin-bottom:28px}
+.ratingNum{font-size:60px;font-weight:900;line-height:1}
+.rating small{color:#68778c}
+.lead{background:linear-gradient(135deg,#0b203c,#153d6e);padding:65px 0}
+.leadGrid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.lead h2{font-size:52px;line-height:1;margin:10px 0 20px}
+.form{background:#fff;color:#102038;border-radius:18px;padding:28px;box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.form h3{margin-top:0;font-size:25px}
+.input{width:100%;padding:14px;border:1px solid #d9e1ec;border-radius:7px;margin:7px 0;font:inherit}
+.form .btn{border:0;width:100%;cursor:pointer;margin-top:8px}
+.micro{font-size:11px;color:#718096;text-align:center;margin-top:12px}
+.final{padding:90px 0;text-align:center;background:#030d1b}
+.final h2{font-size:clamp(38px,5vw,62px);line-height:1;margin:10px auto 18px;max-width:900px}
+.footer{background:#020811;border-top:1px solid var(--line);padding:24px 0;color:#9eabc0;font-size:13px}
+.footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+
+.funnelMap{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:stretch}
+.funnelStep{background:#0b1f3a;border:1px solid rgba(255,255,255,.11);border-radius:12px;padding:20px 12px;text-align:center;position:relative}
+.funnelStep:not(:last-child):after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:#ff6b1a;font-size:20px;font-weight:900;z-index:2}
+.funnelNum{width:30px;height:30px;border-radius:50%;background:#ff6b1a;color:#fff;display:grid;place-items:center;margin:0 auto 10px;font-size:12px;font-weight:900}
+.funnelStep b{display:block;font-size:13px}.funnelStep span{display:block;color:#9fb0c7;font-size:11px;margin-top:6px}
+.methodGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.method{background:#fff;border:1px solid #e0e6ef;border-radius:14px;padding:22px;box-shadow:0 8px 25px rgba(7,23,44,.05)}
+.methodNum{color:#ff6b1a;font-size:12px;font-weight:900;letter-spacing:.1em}.method h3{color:#0b1b31;margin:7px 0}.method p{color:#617086;font-size:13px;margin:0}
+.audienceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.audience{background:linear-gradient(145deg,#0b1d36,#102b50);border:1px solid var(--line);border-radius:15px;padding:27px}.audience h3{margin:8px 0 10px}.audience p{color:#b9c7d9;margin:0}
+.objectionGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.objection{background:#fff;border:1px solid #e1e7ef;border-radius:14px;padding:22px}.objection b{display:block;color:#0b1b31;margin-bottom:8px}.objection p{color:#607087;font-size:13px;margin:0}
+.campaignTable{width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px;background:#fff;color:#17263b}.campaignTable th,.campaignTable td{padding:16px;border-bottom:1px solid #e3e8ef;text-align:left;font-size:13px}.campaignTable th{background:#0b1f3a;color:#fff;text-transform:uppercase;letter-spacing:.07em;font-size:11px}.campaignTable tr:last-child td{border-bottom:0}.campaignTable strong{color:#d94f08}
+.faqGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq{background:#fff;border:1px solid #e0e6ef;border-radius:13px;padding:20px}.faq b{color:#0b1b31}.faq p{color:#617086;font-size:13px;margin:7px 0 0}
+.thankyou{background:linear-gradient(135deg,#061426,#153d6e);border-radius:20px;padding:55px;text-align:center;border:1px solid rgba(255,255,255,.12)}.thankyou h2{font-size:48px;line-height:1;margin:10px auto 16px;max-width:760px}.thankyou p{color:#c5d1e0;max-width:680px;margin:0 auto 25px}
+.strategyNote{display:inline-flex;padding:8px 12px;border-radius:999px;background:rgba(255,107,26,.12);color:#ff8a3d;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:1050px){.funnelMap{grid-template-columns:repeat(4,1fr)}.funnelStep:not(:last-child):after{display:none}.methodGrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:800px){.audienceGrid,.objectionGrid,.faqGrid{grid-template-columns:1fr 1fr}.campaignTable{font-size:12px}}
+@media(max-width:600px){.funnelMap,.methodGrid,.audienceGrid,.objectionGrid,.faqGrid{grid-template-columns:1fr}.thankyou{padding:35px 22px}.thankyou h2{font-size:38px}.campaignTable{display:block;overflow-x:auto;white-space:nowrap}}
+
+.realTeam{padding:0 0 10px;background:#061426}
+.realTeamInner{display:grid;grid-template-columns:1.25fr .75fr;gap:0;align-items:stretch;border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;background:#0b1f3a;box-shadow:0 25px 65px rgba(0,0,0,.28)}
+.realTeamImg{width:100%;height:100%;min-height:420px;object-fit:cover;display:block}
+.realTeamCopy{padding:45px}
+.realTeamCopy h2{font-size:clamp(34px,4vw,52px);line-height:1.02;margin:10px 0 18px}
+.realTeamCopy p{color:#c3cfdf;font-size:17px}
+.realPhotoStrip{margin-top:18px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 20px 45px rgba(0,0,0,.25)}
+.realPhotoStrip img{width:100%;display:block;max-height:360px;object-fit:cover}
+.realPhotoLabel{padding:12px 16px;background:#08192f;color:#aebbd0;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:900px){.realTeamInner{grid-template-columns:1fr}.realTeamImg{min-height:320px}}
+
+.note{font-size:11px;color:#77869a;margin-top:12px}
+@media(max-width:900px){
+ .navlinks{display:none} .heroGrid,.proofGrid,.split,.phoneRow,.leadGrid{grid-template-columns:1fr}
+ .featureGrid{grid-template-columns:1fr 1fr} .reviewGrid{grid-template-columns:1fr 1fr}
+ h1{font-size:48px} .hero{padding-top:55px}
+}
+@media(max-width:560px){
+ .stats,.featureGrid,.reviewGrid{grid-template-columns:1fr}
+ .heroActions .btn{width:100%} .lead h2{font-size:40px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>WATSONPOWERS • BUSINESS COACHING FOR REAL ESTATE</span><span>Real coaching. Real results. <b class="orange">Real freedom.</b></span></div></div>
+
+<nav><div class="container navin">
+  <a class="logo" href="#"><span class="logoMark">WP</span><span>WATSONPOWERS<small>BUSINESS COACHING FOR REAL ESTATE</small></span></a>
+  <div class="navlinks"><a href="#approach">Approach</a><a href="#results">Results</a><a href="#reviews">Reviews</a><a href="#playbook">Playbook</a></div>
+  <a class="btn" href="#book">BOOK FREE CONSULTATION</a>
+</div></nav>
+
+<section class="hero">
+ <div class="container heroGrid">
+  <div>
+   <div class="eyebrow">Real Estate Coaching • Proven Systems • Practical Strategy</div>
+   <h1>BUILD A REAL ESTATE BUSINESS THAT <span class="orange">GIVES YOU FREEDOM.</span></h1>
+   <p>Proven strategies. Powerful systems. Extraordinary results. Get the coaching, scripts and accountability designed to help real estate professionals close more deals and build a stronger business.</p>
+   <div class="heroActions"><a class="btn" href="#book">BOOK YOUR FREE CONSULTATION →</a><a class="btn secondary" href="#approach">SEE THE APPROACH</a></div>
+   <div class="stats">
+    <div class="stat"><strong>8,000+</strong><span>Homes Sold</span></div>
+    <div class="stat"><strong>150,000+</strong><span>Coaching Calls</span></div>
+    <div class="stat"><strong>60+</strong><span>Years Combined Exp.</span></div>
+   </div>
+  </div>
+  <div><img src="watsonpowers-team-wide.jpg" alt="WatsonPowers coaching team" loading="lazy" style="width:100%;height:520px;object-fit:cover;object-position:center;border-radius:18px">
+  </div></div>
+ </div>
+</section>
+
+<section class="realTeam">
+ <div class="container" style="padding:38px 0 55px">
+  <div class="realTeamInner">
+   <img class="realTeamImg" src="watsonpowers-team-wide.jpg" alt="WatsonPowers coaching team — client-provided photo">
+   <div class="realTeamCopy">
+    <div class="kicker">The real team behind the coaching</div>
+    <h2>Meet the people behind <span class="orange">WatsonPowers.</span></h2>
+    <p>This funnel uses the actual WatsonPowers team photo supplied for the client presentation, so the brand feels personal, credible and unmistakably real.</p>
+    <p><strong>Real people. Real coaching. Real conversations.</strong></p>
+    <a class="btn" href="#book">TALK WITH THE TEAM →</a>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="section light" id="approach">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">A better way to build</div><h2>Stop guessing. Start operating with a <span class="orange">game plan.</span></h2><p>WatsonPowers positions coaching around practical systems, scripts, market insight, mindset and accountability rather than generic advice.</p></div>
+  <div class="featureGrid">
+   <div class="feature"><div class="icon">01</div><b>Proven Strategies</b><p>Battle-tested approaches for generating leads, winning listings and moving opportunities forward.</p></div>
+   <div class="feature"><div class="icon">02</div><b>Powerful Systems</b><p>Repeatable processes designed to create consistency, leverage and predictable execution.</p></div>
+   <div class="feature"><div class="icon">03</div><b>Scripts & Skills</b><p>Practical language and coaching for objections, conversations, follow-up and closing.</p></div>
+   <div class="feature"><div class="icon">04</div><b>Mindset & Growth</b><p>Build the habits, confidence and leadership needed for the next level.</p></div>
+  </div>
+ </div>
+
+</section>
+
+<section class="section" style="padding-top:35px">
+ <div class="container">
+  <div class="sectionHead">
+   <div class="kicker">The strategy behind the creative</div>
+   <h2>One brand. Multiple touchpoints. <span class="orange">One conversion path.</span></h2>
+   <p>This is the proposed digital growth system that connects the WatsonPowers creative assets into a single lead-generation journey.</p>
+  </div>
+  <div class="funnelMap">
+   <div class="funnelStep"><div class="funnelNum">01</div><b>Social Ads</b><span>Capture attention</span></div>
+   <div class="funnelStep"><div class="funnelNum">02</div><b>Landing Page</b><span>Build desire</span></div>
+   <div class="funnelStep"><div class="funnelNum">03</div><b>Lead Magnet</b><span>Exchange value</span></div>
+   <div class="funnelStep"><div class="funnelNum">04</div><b>Email Nurture</b><span>Build trust</span></div>
+   <div class="funnelStep"><div class="funnelNum">05</div><b>Social Proof</b><span>Reduce doubt</span></div>
+   <div class="funnelStep"><div class="funnelNum">06</div><b>Strategy Call</b><span>Start dialogue</span></div>
+   <div class="funnelStep"><div class="funnelNum">07</div><b>Booking</b><span>Convert</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section light">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Audience positioning</div><h2>Speak to agents who are ready for a <span class="orange">better system.</span></h2><p>These are positioning concepts for the funnel; final audience language should be approved by WatsonPowers.</p></div>
+  <div class="audienceGrid">
+   <div class="audience"><div class="strategyNote">01 • Growth</div><h3>Agents Ready to Scale</h3><p>Already producing, but looking for stronger systems, consistency and a clearer path to the next level.</p></div>
+   <div class="audience"><div class="strategyNote">02 • Consistency</div><h3>Agents Tired of Guessing</h3><p>Hard-working professionals who need repeatable processes, scripts and accountability instead of random tactics.</p></div>
+   <div class="audience"><div class="strategyNote">03 • Freedom</div><h3>Agents Building a Business</h3><p>Professionals who want a successful real estate business while creating more control over their time and life.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Proposed framework</div><h2>The <span class="orange">WatsonPowers</span> coaching journey.</h2><p>A presentation framework based on the coaching themes already represented in the supplied WatsonPowers materials.</p></div>
+  <div class="methodGrid">
+   <div class="method"><div class="methodNum">01 / CLARITY</div><h3>Know the Goal</h3><p>Define the business outcome, priorities and next moves.</p></div>
+   <div class="method"><div class="methodNum">02 / SYSTEMS</div><h3>Build the Machine</h3><p>Turn good intentions into repeatable operating systems.</p></div>
+   <div class="method"><div class="methodNum">03 / SCRIPTS</div><h3>Know What to Say</h3><p>Strengthen the conversations that move opportunities forward.</p></div>
+   <div class="method"><div class="methodNum">04 / EXECUTION</div><h3>Work the Plan</h3><p>Use weekly priorities and accountability to create consistency.</p></div>
+   <div class="method"><div class="methodNum">05 / GROWTH</div><h3>Improve & Scale</h3><p>Review results, refine the process and pursue the next level.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section light">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Conversion psychology</div><h2>Answer the questions prospects are <span class="orange">already asking.</span></h2><p>Objection-handling concepts for the landing page and retargeting campaign. Final claims and responses should be client-approved.</p></div>
+  <div class="objectionGrid">
+   <div class="objection"><b>“I don't have time.”</b><p>Position coaching around systems, priorities and practical execution—not adding more noise to the calendar.</p></div>
+   <div class="objection"><b>“I've tried coaching before.”</b><p>Differentiate through practical scripts, systems, accountability and real-world coaching conversations.</p></div>
+   <div class="objection"><b>“My market is different.”</b><p>Frame the strategy around the agent's market, goals and business realities rather than generic tactics.</p></div>
+   <div class="objection"><b>“I'm already successful.”</b><p>Position the offer around strengthening the business, improving consistency and creating more freedom.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Campaign architecture</div><h2>Every creative has a <span class="orange">job to do.</span></h2><p>This makes the portfolio read like a marketing strategy rather than a gallery of disconnected graphics.</p></div>
+  <table class="campaignTable">
+   <thead><tr><th>Campaign</th><th>Creative</th><th>Primary Objective</th><th>CTA / Next Step</th></tr></thead>
+   <tbody>
+    <tr><td><strong>Freedom</strong></td><td>Hero / Lead Ad</td><td>Awareness + Lead Generation</td><td>Book Free Consultation</td></tr>
+    <tr><td><strong>Better Systems</strong></td><td>Instagram Post</td><td>Awareness + Engagement</td><td>See the Approach</td></tr>
+    <tr><td><strong>Coaching Advantage</strong></td><td>Premium Brochure</td><td>Lead Capture</td><td>Download / Request</td></tr>
+    <tr><td><strong>Weekly Game Plan</strong></td><td>Game Plan Creative</td><td>Value + Nurture</td><td>Start a Conversation</td></tr>
+    <tr><td><strong>Real Results</strong></td><td>Testimonials</td><td>Trust + Retargeting</td><td>Book Strategy Session</td></tr>
+    <tr><td><strong>Top Producer</strong></td><td>Email Campaign</td><td>Nurture + Return Visits</td><td>Book Consultation</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<section class="section" id="results">
+ <div class="container" style="margin-bottom:-15px"><div class="strategyNote">CREATIVE SHOWCASE</div></div>
+ <div class="container split">
+  <div class="creative"><img src="instagram.png" alt="WatsonPowers Instagram creative" loading="lazy"></div>
+  <div class="sectionHead">
+   <div class="kicker">Built for real-world execution</div>
+   <h2>Better strategies. Better systems. <span class="orange">Bigger results.</span></h2>
+   <p>Use the social campaign creative as a visual proof point inside the funnel, then move visitors directly into a consultation conversation.</p>
+   <div class="checks">
+    <div class="check"><i>✓</i><span><b>Market insight</b><br>Stay aware of what is happening in your market.</span></div>
+    <div class="check"><i>✓</i><span><b>Proven scripts</b><br>Know what to say in the moments that matter.</span></div>
+    <div class="check"><i>✓</i><span><b>Accountability</b><br>Turn weekly intentions into consistent action.</span></div>
+   </div>
+   <a class="btn" href="#book">LET'S BUILD YOUR GAME PLAN</a>
+  </div>
+ </div>
+</section>
+
+<section class="section light">
+ <div class="container phoneRow">
+  <div class="sectionHead"><div class="kicker">Meet your prospects where they are</div><h2>Turn attention into a <span class="orange">conversation.</span></h2><p>A mobile-first creative gives the funnel a social-media-native feel while reinforcing the same brand system from the ad through the consultation.</p><a class="btn" href="#book">BOOK A FREE STRATEGY SESSION</a></div>
+  <div class="creative"><img src="mobile.png" alt="WatsonPowers Instagram mobile mockup" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="section" id="playbook">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Lead magnet</div><h2>The <span class="orange">Coaching Advantage</span></h2><p>Use the premium brochure as the lead magnet preview and value bridge before asking for the consultation.</p></div>
+  <div class="creative"><img src="brochure.png" alt="WatsonPowers premium coaching brochure" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="section light">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Weekly value</div><h2>Give agents something they can <span class="orange">use this week.</span></h2><p>The weekly game-plan concept turns coaching into a tangible routine: focus, execute and win.</p></div>
+  <div class="creative">
+   <div style="padding:32px;background:linear-gradient(135deg,#08192f,#102d50);color:#fff;text-align:center">
+    <div class="strategyNote">WEEKLY VALUE SYSTEM</div>
+    <h3 style="font-size:30px;margin:15px 0 8px">5 Days. One Focus. <span class="orange">Better Every Week.</span></h3>
+    <p style="color:#b8c7da;margin:0">The finished Weekly Game Plan appears once in the Creative Showcase below.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Email nurture</div><h2>Stay top-of-mind between <span class="orange">conversations.</span></h2><p>Use this campaign banner as the visual anchor for weekly coaching emails, newsletters and consultation follow-up.</p></div>
+  <div class="creative"><img src="email.png" alt="WatsonPowers email campaign banner" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="section light" id="reviews">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Client voice</div><h2>Real people. Real coaching. <span class="orange">Real results.</span></h2>
+   <div class="rating"><div class="ratingNum">5.0</div><div><div class="stars">★★★★★</div><small>39 Google reviews shown in the supplied review material.</small></div></div>
+  </div>
+  <div class="reviewGrid"><article class="review"><div class="stars">★★★★★</div><h3>L. Anglin</h3><p>Steve Powers has helped my business continue to grow and improve regardless of the market we are in. Has helped me maintain a family life as well as a successful business. Couldnt recommend anyone better than this group</p></article>
+<article class="review"><div class="stars">★★★★★</div><h3>I. Carcamo</h3><p>Steve Powers is an exceptional coach. His attention to detail and commitment to helping you improve is unmatched. He doesn’t just give surface-level advice — he takes the time to dig deep, understand your goals, and tailor his coaching.</p></article>
+<article class="review"><div class="stars">★★★★★</div><h3>J. Clark</h3><p>I’ve worked with multiple business/real estate coaches through the years. Some with success, but mostly using mundane, cookie cutter tactics that you could honestly do better with watching YouTube videos.</p></article>
+<article class="review"><div class="stars">★★★★★</div><h3>D. Webb</h3><p>I have known Gordon Watson for most of my 30+ year Real Estate Career - His knowledge and expertise and his commitment to clients is top notch. I have known Steve Powers for 10+ Years - you could not find a better Real Estate Coaching Service.</p></article>
+<article class="review"><div class="stars">★★★★★</div><h3>M. Kent</h3><p>The best...coach out there. Steve Powers makes things simple and easy to understand. An expert on knowing what to say in every scripts and an expert on training agents on what to say in any situation.</p></article>
+<article class="review"><div class="stars">★★★★★</div><h3>T. Kassabian</h3><p>It’s an honor to be coached by Steve. He has passion for what he does, and it definitely gets passed on to us. Steve keeps us engaged, motivated, and on the right track to become the best agent!</p></article>
+<article class="review"><div class="stars">★★★★★</div><h3>M. Kent</h3><p>Steve Powers is the best of the best. If you’re looking to take your business to the next level, call Steve Powers immediately. He will coach you on systems and scripts on exactly what you need to do and say on a daily basis to double your business.</p></article>
+<article class="review"><div class="stars">★★★★★</div><h3>J. Burleson</h3><p>In 23+ years in real estate, I’m amazed by the insight and expertise of this powerful company! In a short time I’ve already seen an incredible difference in how I work my business. Very grateful for the level of training that is provided!</p></article></div>
+  <div class="note">Names are intentionally abbreviated in this mockup to protect reviewer identity. Testimonial wording is based on the review material supplied for this design.</div>
+ </div>
+</section>
+
+<section class="section" style="padding-top:55px">
+ <div class="container">
+  <div class="creative"><img src="testimonials.png" alt="WatsonPowers testimonial campaign creative" loading="lazy"></div>
+ </div>
+</section>
+
+
+<section class="section" style="padding-bottom:35px">
+ <div class="container split">
+  <div class="creative">
+   <img src="watsonpowers-team-portrait.jpg" alt="WatsonPowers coaching team" style="display:block;width:100%">
+  </div>
+  <div class="sectionHead">
+   <div class="kicker">Ready when you are</div>
+   <h2>Put a real team behind your <span class="orange">next level.</span></h2>
+   <p>The final conversion step keeps the human connection front and center before the visitor reaches the consultation form.</p>
+   <a class="btn" href="#book">BOOK YOUR FREE STRATEGY SESSION →</a>
+  </div>
+ </div>
+</section>
+
+<section class="lead" id="book">
+ <div class="container leadGrid">
+  <div>
+   <div class="kicker">Your next move</div>
+   <h2>READY TO BUILD A BUSINESS THAT <span class="orange">WORKS FOR YOU?</span></h2>
+   <p style="font-size:18px;color:#d5deea">Book a free strategy session and start the conversation around your market, your goals, your systems and the next level of your business.</p>
+   <div class="stats">
+    <div class="stat"><strong>8,000+</strong><span>Homes Sold</span></div>
+    <div class="stat"><strong>150,000+</strong><span>Coaching Calls</span></div>
+    <div class="stat"><strong>60+</strong><span>Combined Experience</span></div>
+   </div>
+  </div>
+  <form class="form" onsubmit="event.preventDefault(); alert('Demo only — connect this form to your preferred CRM/booking system.');">
+   <h3>Book Your Free Strategy Session</h3>
+   <p style="color:#617086">Tell us a little about yourself and we'll continue the conversation.</p>
+   <input class="input" required placeholder="First name">
+   <input class="input" required placeholder="Last name">
+   <input class="input" type="email" required placeholder="Email address">
+   <input class="input" placeholder="Phone number">
+   <input class="input" placeholder="Current production / goal">
+   <button class="btn" type="submit">REQUEST MY FREE SESSION →</button>
+   <div class="micro">Demo funnel • Connect to CRM / calendar before launch.</div>
+  </form>
+ </div>
+</section>
+
+
+<section class="section light">
+ <div class="container">
+  <div class="sectionHead"><div class="kicker">Frequently asked questions</div><h2>Remove friction before the <span class="orange">consultation.</span></h2><p>Questions to validate with WatsonPowers before publishing the final funnel.</p></div>
+  <div class="faqGrid">
+   <div class="faq"><b>Who is WatsonPowers coaching designed for?</b><p>Confirm the exact ideal client profile and experience level with the client.</p></div>
+   <div class="faq"><b>What happens during the free consultation?</b><p>Use the client's approved consultation process and expectations here.</p></div>
+   <div class="faq"><b>How does coaching work?</b><p>Explain the approved cadence, format, communication and accountability structure.</p></div>
+   <div class="faq"><b>What makes WatsonPowers different?</b><p>Use verified differentiators from the company's approved messaging.</p></div>
+   <div class="faq"><b>Is coaching right for newer agents?</b><p>Clarify the experience range WatsonPowers wants to serve.</p></div>
+   <div class="faq"><b>How do I get started?</b><p>Book the free strategy session and follow the approved scheduling process.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="thankyou">
+   <div class="eyebrow">Post-conversion experience</div>
+   <h2>THANK YOU — <span class="orange">YOUR NEXT STEP IS READY.</span></h2>
+   <p>After a prospect submits the form, continue the experience with a confirmation page, scheduling instructions and the approved lead magnet or next resource.</p>
+   <a class="btn" href="#book">VIEW THE STRATEGY SESSION CTA</a>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="container">
+  <div class="eyebrow">WATSONPOWERS</div>
+  <h2>REAL COACHING. REAL RESULTS. <span class="orange">REAL FREEDOM.</span></h2>
+  <p style="color:#b6c2d3;font-size:18px">888-852-6224 &nbsp; • &nbsp; watsonpowers.com</p>
+  <a class="btn" href="#book">BOOK YOUR FREE CONSULTATION</a>
+ </div>
+</section>
+
+<footer class="footer"><div class="container"><span>© WatsonPowers • Business Coaching for Real Estate</span><span>Sales Funnel Portfolio Mockup • Designed for presentation</span></div></footer>
+</body>
+</html>
